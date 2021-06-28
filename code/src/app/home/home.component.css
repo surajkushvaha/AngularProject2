@@ -1,0 +1,37 @@
+.card {
+    border-radius: 10px;
+    padding: 3rem;
+    top: 50%;
+    width: 18rem;
+    margin: auto;
+    background-color: rgba(240, 248, 255, 0.123);
+    color: aliceblue;
+}
+
+@media screen and (max-width:650px) {
+    .card {
+        top: 0%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+
+.card:hover>#health {
+    color: red;
+}
+
+.card:hover>#education {
+    color: blue;
+}
+
+.card:hover>#tool {
+    color: dodgerblue;
+}
