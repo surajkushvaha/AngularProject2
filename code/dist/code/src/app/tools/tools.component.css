@@ -1,0 +1,20 @@
+.card {
+    margin: 2rem;
+    border-radius: 10px;
+    padding: 3rem;
+    top: 50%;
+    background-color: rgba(240, 248, 255, 0.233);
+    color: aliceblue;
+}
+
+app-password,
+app-qrcode {
+    padding: 0 20vw 2rem 20vw;
+    align-self: center;
+}
+
+@media screen and (max-width:650px) {
+    .card {
+        top: 0%;
+    }
+}
