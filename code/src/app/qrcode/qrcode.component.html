@@ -1,0 +1,21 @@
+<div class="happy">
+    <h1 style="text-align: center;">QR Code Genretor</h1>
+
+    <form #QRForm="ngForm" (ngSubmit)="getdata(fromForm)">
+        <div class="input-group">
+            <input type="text" class="form-control" name="data" id="" #DATA="ngModel" [(ngModel)]="fromForm">
+
+            <input type="button" class="btn btn-primary" name="genrate" value="Genrate" (click)="getdata(fromForm)" />
+        </div>
+    </form>
+
+    <div><span style="color: rgb(248, 136, 117);"><i class="fas fa-info-circle"></i> url and text are acceptable</span></div>
+
+    <div style="text-align: center;">
+        <div class="span">
+            <p>Open google lense in your phone to see in QR code</p>
+        </div>
+
+        <img [src]="srouce" alt="">
+    </div>
+</div>
